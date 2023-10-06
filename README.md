@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Support Node version --v16.14.2
+
+create module.ts
+ng generate module customers --route customers --module app.module
+ng generate module orders --route orders --module app.module
+
+create routing.module.ts (customer-app is the name of the APP)
+ng new customer-app --routing
+
+generating guard
+ng generate guard guard-name

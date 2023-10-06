@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <div class="text-center">
+    <button (click)="getWeather()" class="btn btn-success btn-md">Search for the weather</button>
+  </div>
+  <ul>
+    <li *ngFor="let person of weathers">
+      <a class="button" [routerLink]="['/weather-lists',person.title]">{{ person.title }}</a>
+    </li>
+  </ul>
+</div>
